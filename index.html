@@ -2,85 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book QR Library</title>
+  <title>Curated Book Collection</title>
+
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       color: white;
-      text-align: center;
     }
 
-    .container {
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
       padding: 60px 20px;
     }
 
     h1 {
+      text-align: center;
       font-size: 3em;
       margin-bottom: 10px;
+      letter-spacing: 1px;
     }
 
-    p {
+    p.subtitle {
+      text-align: center;
       font-size: 1.2em;
+      margin-bottom: 50px;
       opacity: 0.9;
     }
 
-    .card {
-      background: white;
-      color: #333;
-      max-width: 400px;
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    .book-container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
     }
 
-    .card h2 {
-      margin-bottom: 20px;
+    ul {
+      list-style-type: disc;
+      padding-left: 30px;
     }
 
-    .book-link {
-      display: block;
-      background: #667eea;
-      color: white;
+    li {
+      margin-bottom: 25px;
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    a {
       text-decoration: none;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 10px;
-      font-size: 1.1em;
-      transition: transform 0.2s, background 0.2s;
+      font-weight: bold;
+      transition: all 0.3s ease;
     }
 
-    .book-link:hover {
-      background: #764ba2;
-      transform: scale(1.05);
+    a:hover {
+      text-decoration: underline;
+      transform: scale(1.02);
     }
+
+    .author {
+      color: #FFD700; /* Yellow */
+      font-weight: 600;
+    }
+
+    .book1 { color: #ff6f61; }   /* Coral */
+    .book2 { color: #7bed9f; }   /* Mint Green */
+    .book3 { color: #70a1ff; }   /* Soft Blue */
 
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      opacity: 0.8;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.95em;
+      opacity: 0.85;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>📖 Book QR Library</h1>
-    <p>Scan • Explore • Read</p>
+  <div class="overlay">
+    <h1>📖 Timeless Classics</h1>
+    <p class="subtitle">A carefully curated collection for thoughtful readers</p>
 
-    <div class="card">
-      <h2>Featured Book</h2>
+    <div class="book-container">
+      <ul>
+        <li>
+          <a class="book1"
+             href="https://www.amazon.com/Tale-Cities-Dover-Thrift-Editions/dp/0486406512"
+             target="_blank">
+            A Tale of Two Cities
+          </a>
+          &nbsp;— <span class="author">Charles Dickens</span>
+        </li>
 
-      <a class="book-link" href="https://www.amazon.in/Alchemist-Paulo-Coelho/dp/8172234988" target="_blank">
-        The Alchemist – Paulo Coelho
-      </a>
+        <li>
+          <a class="book2"
+             href="https://www.amazon.com/Kill-Mockingbird-Harper-Lee/dp/0060935464"
+             target="_blank">
+            To Kill a Mockingbird
+          </a>
+          &nbsp;— <span class="author">Harper Lee</span>
+        </li>
 
+        <li>
+          <a class="book3"
+             href="https://www.amazon.com/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567"
+             target="_blank">
+            The Great Gatsby
+          </a>
+          &nbsp;— <span class="author">F. Scott Fitzgerald</span>
+        </li>
+      </ul>
     </div>
 
     <footer>
-      Curated with ❤️ for readers
+      Curated with care • Read deeply • Think freely
     </footer>
   </div>
 
