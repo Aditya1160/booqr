@@ -1,56 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>📚 Book Recommendations</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-align: center;
-            padding: 40px;
-        }
+  <meta charset="UTF-8">
+  <title>Curated Book Collection</title>
 
-        h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+    }
 
-        p {
-            font-size: 18px;
-            opacity: 0.9;
-        }
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
 
-        .book-card {
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 16px;
-            padding: 25px;
-            margin: 30px auto;
-            width: 80%;
-            max-width: 500px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
 
-        a {
-            color: #ffe066;
-            font-size: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    p.subtitle {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 50px;
+      opacity: 0.9;
+    }
+
+    .book-container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 30px;
+    }
+
+    li {
+      margin-bottom: 25px;
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      transform: scale(1.02);
+    }
+
+    .author {
+      color: #FFD700; /* Yellow */
+      font-weight: 600;
+    }
+
+    .book1 { color: #ff6f61; }   /* Coral */
+    .book2 { color: #7bed9f; }   /* Mint Green */
+    .book3 { color: #70a1ff; }   /* Soft Blue */
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.95em;
+      opacity: 0.85;
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1>📖 Recommended Book</h1>
+  <div class="overlay">
+    <h1> Timeless Classics</h1>
+    <p class="subtitle">A carefully curated collection for thoughtful readers</p>
 
-    <div class="book-card">
-        <h2>The Alchemist</h2>
-        <p>by Paulo Coelho</p>
-        <a href="https://www.amazon.in/Alchemist-Paulo-Coelho/dp/8172234988" target="_blank">
-            Buy on Amazon
-        </a>
+    <div class="book-container">
+      <ul>
+        <li>
+          <a class="book1"
+             href="https://www.amazon.com/Tale-Cities-Dover-Thrift-Editions/dp/0486406512"
+             target="_blank">
+            A Tale of Two Cities
+          </a>
+          &nbsp;— <span class="author">Charles Dickens</span>
+        </li>
+
+        <li>
+          <a class="book2"
+             href="https://www.amazon.com/Kill-Mockingbird-Harper-Lee/dp/0060935464"
+             target="_blank">
+            To Kill a Mockingbird
+          </a>
+          &nbsp;— <span class="author">Harper Lee</span>
+        </li>
+
+        <li>
+          <a class="book3"
+             href="https://www.amazon.com/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567"
+             target="_blank">
+            The Great Gatsby
+          </a>
+          &nbsp;— <span class="author">F. Scott Fitzgerald</span>
+        </li>
+      </ul>
     </div>
+
+    <footer>
+      Curated with care • Read deeply • Think freely
+    </footer>
+  </div>
 
 </body>
 </html>
