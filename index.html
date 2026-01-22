@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Book QR</title>
+  <meta charset="UTF-8">
+  <title>Book QR Library</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+    }
+
+    .book-link {
+      display: block;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      font-size: 1.1em;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .book-link:hover {
+      background: #764ba2;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
 </head>
-<body style="background:#111;color:white;text-align:center;padding-top:100px;font-family:Arial">
-  <h1>📚 Book QR Page is Live!</h1>
-  <p>If you can see this, GitHub Pages is working.</p>
+<body>
+
+  <div class="container">
+    <h1>📖 Book QR Library</h1>
+    <p>Scan • Explore • Read</p>
+
+    <div class="card">
+      <h2>Featured Book</h2>
+
+      <a class="book-link" href="https://www.amazon.in/Alchemist-Paulo-Coelho/dp/8172234988" target="_blank">
+        The Alchemist – Paulo Coelho
+      </a>
+
+    </div>
+
+    <footer>
+      Curated with ❤️ for readers
+    </footer>
+  </div>
+
 </body>
 </html>
